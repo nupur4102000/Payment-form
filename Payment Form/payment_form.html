@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{box-sizing:border-box;
+        }
+        body{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 15px 30px;
+            font-size: 20px;
+            padding: 7px;
+        }
+        .container{
+            background-color: rgb(179, 241, 245);
+            padding: 5px 20px 15px 20px;
+            border-radius: 5px;
+            border: 1px solid lightslategray;
+        }
+        input [type="text"]
+        {
+                   width:100%;
+                   padding:12px;
+               border:1px solid #ccc;
+               margin:10px;
+
+        } input[type="text"],
+        input[type="email"],
+        input[type="password"],input[type="date"],
+        input[type="address"], textarea,select,input[type="number"]
+        {
+            width:100%;
+padding:10px;
+border:1px solid #ccc;
+margin:8px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+font-style:italic;
+font-weight: bold;
+
+        }p{font-weight: bold;
+          
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    fieldset    {
+        background-color: rgb(255, 255, 255);
+        border-radius:5px;
+    }
+    .mainn{
+        text-align:center;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+    }
+    input[type="submit"]
+    { text-align:center;
+      background-color: mediumseagreen;
+      color:black;
+      padding:12px 20px;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+      width:100%
+    }
+input[type="submit"]:hover{
+    background-color: rgb(11, 36, 82);
+
+    }
+    </style>
+  
+    <title> Payment form</title>
+    
+</head>
+<body>
+    <div class="container">
+  <form action="">
+      <h1 class="mainn" >
+          Payment Form!
+      </h1>
+      <fieldset><legend><h2>Contact Information</h2></legend>  
+      <p> Name:<input type="text" width=100% name="name" required></p>
+    <p>Gender: Male<input type="radio" name="gender"> Female<input type="radio" name="gender">  Others<input type="radio" name="gender"></p>
+       
+  
+<p>Address:<textarea name="address" width=100% required id ="address" > </textarea></p>
+   <p>   Email:<input type="email" width=100% required name="email" id="email"></p>
+     <p> Pincode:<input type="number"width=100% required name="pin" id="pin"></p>
+    </fieldset> 
+      <fieldset > 
+          <legend><h2>Payment Information</h2></legend> 
+          <p>Card detail:<select name="card" id="card " required>
+            <option value="">__Select a card__</option>
+             <option value="rupay" style="background: url(rupay.jfif) no-repeat; padding-left: 20px;">rupay</option>
+              <option style="background:url(visa.jfif);" value="visa">visa</option>
+              <option style="background:url(master.jfif);" value="master card">master card</option>
+              
+                 </select> </p>
+                 <p>Card Number:<input type="number" name="card_number"required width=100% id="card_number"></p>
+                 <p> Expiration Date: <input type="date" name="expdate"required width=100% id="expdate"></p>
+                 <p>CVV:<input type="password" name="cvv"width=100% required id="cvv"></p>
+                 <br\>
+                 <input type="submit" value="PAY NOW" style="text-align: center;">
+        </fieldset>
+  </form></div>
+</body>
+</html>
